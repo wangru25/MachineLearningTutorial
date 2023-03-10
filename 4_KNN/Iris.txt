@@ -1,0 +1,7 @@
+Features
+1. Sepal Length (cm)
+2. Sepal Width (cm)
+
+Labels
+1: Virginica
+0: Not Virginica

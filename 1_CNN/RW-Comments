@@ -1,0 +1,21 @@
+RuiWang-CNN:
+1. nn.convlayers.conv_forward:
+    a) same parameter name C in z and K will cause some confusions
+2. nn.convlayers.conv_backward:
+    a) float64 is too huge, should use float32 for faster GPU calculations
+3. Should make CNN classes more flexible, e.g.:
+    myCNN = CNN(**kwargs)
+    myCNN.convolution(**kwargs)
+    myCNN.relu(**kwargs)
+    myCNN.maxpooling(**kwargs)
+    myCNN.relu(**kwargs)
+    myCNN.forward(**kwargs)
+    myCNN.flatten(**kwargs)
+    myCNN.backpropagation()
+
+4. Do not see the dropout in the CNN yet.
+5. Use pytorch instead of Numpy for making use of GPU speed
+
+
+
+
